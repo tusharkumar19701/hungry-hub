@@ -14,7 +14,7 @@ const SigninBtn = () => {
     const userData = useSelector(state => state.authSlice.userData);
 
     async function handleAuth() {
-        let data = await signInWithPopup(auth,provider);
+        let data = await signInWithRedirect(auth,provider);
         const userData = {
             name: data.user.displayName,
             photo: data.user.photoURL,
