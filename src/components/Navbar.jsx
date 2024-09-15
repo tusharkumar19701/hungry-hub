@@ -12,6 +12,7 @@ import { CiUser } from "react-icons/ci";
 import { useDispatch, useSelector } from 'react-redux';
 import { toggleLogin, toggleSearchBar } from '../utils/toggleSlice';
 import SigninBtn from './SigninBtn';
+import logo from "../assets/logo.png";
 
 const Navbar = () => {
 
@@ -105,7 +106,7 @@ const Navbar = () => {
           <div className='flex items-center'>
             <Link to="/">
               <div className='w-16'>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIMhQZ3YpaYOinNFPBeej97sfcA8W7m6ex1A&s" alt="" />
+                <img src={logo} alt="" />
               </div>
             </Link>
             <div className='flex items-center gap-1 cursor-pointer' onClick={handleVisibility}>
