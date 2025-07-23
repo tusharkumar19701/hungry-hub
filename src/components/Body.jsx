@@ -22,7 +22,7 @@ const Body = () => {
     setResTitle(json?.data?.cards.find((data) => data?.card?.card?.id == "top_brands_for_you")?.card?.card?.header?.title);
     setFoodTitle(json?.data?.cards.find((data) => data?.card?.card?.id == "popular_restaurants_title")?.card?.card?.title);
     let mainData = json?.data?.cards.find((data) => data?.card?.card?.id == "top_brands_for_you")?.card?.card?.gridElements?.infoWithStyle?.restaurants;
-    let mainData2 = json?.data?.cards.find((data) => data?.card?.card?.id == "restaurant_grid_listing")?.card?.card?.gridElements?.infoWithStyle?.restaurants;
+    let mainData2 = json?.data?.cards.find((data) => data?.card?.card?.id == "restaurant_grid_listing_v2")?.card?.card?.gridElements?.infoWithStyle?.restaurants;
     setRestaurants(mainData || mainData2);
     let data2 = json?.data?.cards.find((data) => data?.card?.card?.id == "whats_on_your_mind")?.card?.card;
     setCuisine(data2);
